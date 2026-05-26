@@ -20,6 +20,19 @@ python3 wrapper_demo.py
 
 Default port is `8888`. Override with `PORT`.
 
+## Docker
+
+```bash
+docker build -t runpod-sync-wrapper .
+docker run --rm -p 8888:8888 runpod-sync-wrapper
+```
+
+Or with a custom port:
+
+```bash
+docker run --rm -e PORT=8899 -p 8899:8899 runpod-sync-wrapper
+```
+
 ## Test
 
 ```bash
